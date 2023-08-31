@@ -38,7 +38,7 @@ with placeholder.container():
    st.code("""
             Try:
             Psychology of color in product design
-            How Uber uses ML models for drive revenue?
+            How Uber uses ML models to drive revenue?
             """, language= None)
    
 
