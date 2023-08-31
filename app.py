@@ -28,6 +28,12 @@ st.write("♥️ Powered by GPT-3.5 fine-tuned model.")
 
 query = st.text_input("Please enter the topic")
 
+st.code("""
+Try:
+    How Uber uses ML models for drive revenue?
+    Psychology of color in product design
+""")
+
 if query:
   prompt = "Write a LinkedIn post like Amar Srivastava on  " + query
   post = run_llm(prompt)
