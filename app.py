@@ -32,7 +32,7 @@ st.code("""
 Try:
     How Uber uses ML models for drive revenue?
     Psychology of color in product design
-""")
+""", language= None)
 
 if query:
   prompt = "Write a LinkedIn post like Amar Srivastava on  " + query
