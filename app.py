@@ -2,8 +2,11 @@ import streamlit as st
 
 from langchain.chat_models import ChatOpenAI
 from langchain.schema import HumanMessage
-from dotenv import load_dotenv
-load_dotenv()
+import os
+# from dotenv import load_dotenv
+# load_dotenv()
+
+os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
 
 amar_model = "ft:gpt-3.5-turbo-0613:personal::7tf130i3"
 
