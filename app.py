@@ -30,8 +30,8 @@ query = st.text_input("Please enter the topic")
 
 st.code("""
 Try:
-    How Uber uses ML models for drive revenue?
-    Psychology of color in product design
+How Uber uses ML models for drive revenue?
+Psychology of color in product design
 """, language= None)
 
 if query:
