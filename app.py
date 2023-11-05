@@ -33,7 +33,7 @@ if "submitted" not in st.session_state:
 
 st.title("🤖 Amar GPT")
 st.write("🚀 Generate LinkedIn posts on Product like [Amar Srivastava](https://www.linkedin.com/in/amarsrivastava26/)")
-st.write("♥️ Powered by GPT-3.5 fine-tuned model.")
+st.write("♥️ Powered by Meta's Llama-13B fine-tuned model.")
 
 query = st.text_input("Please enter the topic")
 
