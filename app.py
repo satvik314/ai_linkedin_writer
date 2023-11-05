@@ -6,11 +6,18 @@ import os
 # from dotenv import load_dotenv
 # load_dotenv()
 
-os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
+# os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
 
-amar_model = "ft:gpt-3.5-turbo-0613:personal::7tf130i3"
+# amar_model = "ft:gpt-3.5-turbo-0613:personal::7tf130i3"
 
-llm = ChatOpenAI(model = amar_model)
+# llm = ChatOpenAI(model = amar_model)
+
+os.environ["OPENAI_API_KEY"] = st.secrets["ANYSCALE_API_KEY"]
+
+linkedin_ghost_model = "meta-llama/Llama-2-13b-chat-hf:paramkusham:lVvcocT"
+
+llm = ChatOpenAI(model = linkedin_ghost_model ,
+                openai_api_base = "https://api.endpoints.anyscale.com/v1")
 
 
 def run_llm(prompt):
