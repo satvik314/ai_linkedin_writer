@@ -4,3 +4,5 @@ langchain-openai
 streamlit
 supabase
 chromadb
+beautifulsoup4
+tiktoken
