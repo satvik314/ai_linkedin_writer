@@ -11,8 +11,8 @@ import os
 
 
 # initialize supabase
-supabase_url = os.getenv("SUPABASE_URL")
-supabase_key = os.getenv("SUPABASE_KEY")
+supabase_url = st.secrets["SUPABASE_URL"]
+supabase_key = st.secrets["SUPABASE_KEY"]
 db_client = supabase.create_client(supabase_url, supabase_key)   
 
 # os.environ["OPENAI_API_KEY"] = st.secrets["ANYSCALE_API_KEY"]
@@ -23,7 +23,7 @@ linkedin_ghost_model = "meta-llama/Llama-2-13b-chat-hf:paramkusham:lVvcocT"
 
 llm = ChatOpenAI(model = linkedin_ghost_model ,
                 openai_api_base = "https://api.endpoints.anyscale.com/v1",
-                openai_api_key = os.getenv("ANYSCALE_API_KEY")
+                openai_api_key = st.secrets["ANYSCALE_API_KEY"]
                 )
 
 
