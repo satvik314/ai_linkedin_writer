@@ -1,6 +1,6 @@
 import streamlit as st
 import supabase
-from langchain.chat_models import ChatOpenAI
+from langchain_community.chat_models import ChatOpenAI
 from langchain_openai import OpenAIEmbeddings
 from langchain.vectorstores import Chroma
 from langchain.document_loaders import WebBaseLoader
